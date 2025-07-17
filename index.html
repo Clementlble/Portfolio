@@ -25,6 +25,18 @@
     html {
       scroll-behavior: smooth;
       -webkit-overflow-scrolling: touch;
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+    body, main {
+      width: 100%;
+      max-width: 100%;
+      min-width: 0;
+      overflow-x: hidden;
+      box-sizing: border-box;
     }
     section, .hero-content, .max-w-3xl, .max-w-5xl, .rounded-3xl {
       scroll-margin-top: 90px;
@@ -51,7 +63,6 @@
       background: rgba(255,255,255,0.15) !important;
       backdrop-filter: blur(16px) saturate(140%);
       -webkit-backdrop-filter: blur(16px) saturate(140%);
-      /* Suppression du box-shadow blanc */
       box-shadow: none !important;
       border-radius:1rem!important;
       border:1px solid rgba(0,0,0,0.07);
@@ -68,12 +79,7 @@
       content: none !important; /* Supprime le dégradé blanc sous la barre */
     }
     .dark nav::after {
-      background: linear-gradient(
-        to bottom,
-        rgba(24,24,27,0.83),
-        rgba(24,24,27,0.08) 70%,
-        rgba(24,24,27,0) 100%
-      );
+      background: none !important;
     }
     nav.premium-scrolled::after {
       opacity: 1;
@@ -224,26 +230,19 @@
         border-radius: 1.1rem !important;
       }
     }
-
-nav {
-  background: rgba(255,255,255,0.15) !important;
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  /* Suppression du box-shadow blanc */
-  box-shadow: none !important;
-  border-radius:1rem!important;
-  border:1px solid rgba(0,0,0,0.07);
-}
-.dark nav {
-  background: rgba(24,24,27,0.08) !important;
-  backdrop-filter: blur(16px) saturate(140%);
-  -webkit-backdrop-filter: blur(16px) saturate(140%);
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.16),0 0 0 8px rgba(31,161,199,0.13),0 0 36px 0 rgba(31,161,199,0.10);
-  border:1px solid rgba(24,24,27,0.13);
-  border-radius:1rem!important;
-}
-
-/* --- RESTE DE TON STYLE --- */
+    @media (max-width: 900px) {
+      html, body, main {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-x: hidden !important;
+        box-sizing: border-box !important;
+      }
+      .max-w-3xl, .max-w-5xl {
+        max-width: 100% !important;
+      }
+    }
+    /* --- RESTE DE TON STYLE --- */
 .bg-accent,
 .bg-accent-dark,
 .hover\:bg-accent:hover,
