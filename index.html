@@ -323,13 +323,8 @@ nav ul li a:focus { color: #18181b!important; border-bottom:2px solid #18181b; }
 #scrollTopBtn { background: #18181b; }
 #scrollTopBtn:hover { background: #222; }
 footer { color: #222!important; }
-body.bg-surface-light, body, .bg-white, .bg-white\/90 {
-  background: #fff!important;
-  color: #18181b!important;
-}
-section, .rounded-3xl, .max-w-3xl, .max-w-5xl, .timeline-img {
-  background: #fff!important;
-  color: #18181b!important;
+
+
 }
 .timeline-title { color: #18181b!important; }
 .timeline-date {
@@ -845,6 +840,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
   class="hero-img w-28 h-28 rounded-2xl object-cover shadow-lg border border-gray-200 dark:border-gray-700"
   />
       </div>
+	  <!-- A propos -->
     </section>
     <section id="about" class="max-w-3xl mx-auto">
       <h2 class="text-4xl font-extrabold mb-8 text-center text-[#222] dark:text-[#f1f1f1]">À propos</h2>
@@ -852,25 +848,248 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
         <p class="text-lg sm:text-xl leading-relaxed text-[#222] dark:text-[#f1f1f1]">
           👋 Bienvenue sur mon portfolio moi c'est clément et je suis passionné par le design, le web moderne et les expériences utilisateurs immersives.<br>
       </div>
+	  
+	  <!-- Expériences -->
     </section>
-    <section id="experience" class="max-w-3xl mx-auto">
-      <h2 class="text-4xl font-extrabold mb-2 text-[#222] dark:text-[#f1f1f1]">Expérience</h2>
-      <p class="text-gray-700 dark:text-gray-400 mb-8">Mon parcours professionnel et missions notables.</p>
-      <ol class="timeline-ol">
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">Alternant Qualité</h3><span class="timeline-date">Depuis septembre 2023</span></div><div class="timeline-tech">Profalux Thyez</div><div class="timeline-desc"><ul class="timeline-ul"><li>Réaliser un suivi des produits non conformes</li><li>Créer des indicateurs de performances</li><li>Intégrer des gammes de contrôle sur l'ERP</li></ul></div></li>
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">Auto-entrepreneur</h3><span class="timeline-date">Depuis novembre 2023</span></div><div class="timeline-tech">Centric concept Lyon</div><div class="timeline-desc"><ul class="timeline-ul"><li>Gérer les relations avec les fournisseurs</li><li>Dessiner et concevoir des articles</li><li>Gérer le site E-commerce</li><li>Gérer le flux administratif et financier</li></ul></div></li>
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">Job d'été</h3><span class="timeline-date">De juillet 2022 à août 2022</span></div><div class="timeline-tech">Service Techniques Samoëns</div><div class="timeline-desc"><ul class="timeline-ul"><li>Gérer les espaces verts</li><li>Tailler</li><li>Arroser</li><li>Tondre</li></ul></div></li>
-      </ol>
+       <section id="experience" class="max-w-3xl mx-auto mt-14 mb-16 px-2">
+      <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1]">Expérience</h2>
+      <p class="text-gray-700 dark:text-gray-400 mb-10 text-center text-lg">Mon parcours professionnel et missions notables.</p>
+      <div class="relative">
+        <ol class="timeline-ol">
+          <!-- Expérience 1 -->
+          <li class="timeline-li group">
+            <span class="timeline-dot"></span>
+            <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+              <div class="timeline-header flex items-center gap-3 mb-2">
+                <!-- Icône métier -->
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-accent/10 dark:bg-accent/30 shadow mr-2">
+                  <svg width="25" height="25" fill="none" stroke="#222" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+                    <circle cx="16" cy="16" r="6" stroke="#222" fill="none"/>
+                    <path d="M16 2v4M16 26v4M2 16h4M26 16h4M6.34 6.34l2.83 2.83M22.83 22.83l2.83 2.83M6.34 25.66l2.83-2.83M22.83 9.17l2.83-2.83" stroke="#222"/>
+                  </svg>
+                </span>
+                <h3 class="timeline-title text-xl font-bold text-accent dark:text-white">Alternant Qualité</h3>
+                <span class="timeline-date">Depuis septembre 2023</span>
+              </div>
+              <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">Profalux Thyez</div>
+              <div class="timeline-desc">
+                <ul class="timeline-ul">
+                  <li>Suivi des produits non conformes</li>
+                  <li>Création d’indicateurs de performances</li>
+                  <li>Intégration des gammes de contrôle sur l’ERP</li>
+                </ul>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="pill bg-blue-100 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Qualité</span>
+                  <span class="pill bg-gray-100 text-accent dark:bg-gray-700 dark:text-gray-100">ERP</span>
+                  <span class="pill bg-green-100 text-green-900 dark:bg-green-800 dark:text-green-200">Indicateurs</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Expérience 2 -->
+          <li class="timeline-li group">
+            <span class="timeline-dot"></span>
+            <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+              <div class="timeline-header flex items-center gap-3 mb-2">
+                <!-- Icône auto-entrepreneur -->
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-accent/10 dark:bg-accent/30 shadow mr-2">
+                  <svg width="25" height="25" fill="none" stroke="#ac38ec" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+                    <rect x="6" y="10" width="20" height="12" rx="3" stroke="#ac38ec" fill="none"/>
+                    <path d="M16 22v4M10 26h12" stroke="#ac38ec"/>
+                  </svg>
+                </span>
+                <h3 class="timeline-title text-xl font-bold text-[#ac38ec] dark:text-[#e9c2fa]">Auto-entrepreneur</h3>
+                <span class="timeline-date">Depuis novembre 2023</span>
+              </div>
+              <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">Centric concept Lyon</div>
+              <div class="timeline-desc">
+                <ul class="timeline-ul">
+                  <li>Gestion des fournisseurs</li>
+                  <li>Dessin et conception d’articles</li>
+                  <li>Gestion du site E-commerce</li>
+                  <li>Flux administratif et financier</li>
+                </ul>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="pill bg-pink-100 text-pink-900 dark:bg-pink-800 dark:text-pink-200">Création</span>
+                  <span class="pill bg-gray-100 text-accent dark:bg-gray-700 dark:text-gray-100">E-commerce</span>
+                  <span class="pill bg-yellow-100 text-yellow-900 dark:bg-yellow-800 dark:text-yellow-200">Gestion</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Expérience 3 -->
+          <li class="timeline-li group">
+            <span class="timeline-dot"></span>
+            <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+              <div class="timeline-header flex items-center gap-3 mb-2">
+                <!-- Icône job été -->
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-accent/10 dark:bg-accent/30 shadow mr-2">
+                  <svg width="25" height="25" fill="none" stroke="#38bdf8" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+                    <path d="M8 22v-6a8 8 0 0 1 16 0v6" stroke="#38bdf8" fill="none"/>
+                    <rect x="10" y="22" width="12" height="6" rx="2" stroke="#38bdf8" fill="none"/>
+                    <path d="M16 10v-4" stroke="#38bdf8"/>
+                  </svg>
+                </span>
+                <h3 class="timeline-title text-xl font-bold text-[#38bdf8] dark:text-[#aef3fa]">Job d’été</h3>
+                <span class="timeline-date">Juillet–Août 2022</span>
+              </div>
+              <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">Service Techniques Samoëns</div>
+              <div class="timeline-desc">
+                <ul class="timeline-ul">
+                  <li>Gestion des espaces verts</li>
+                  <li>Taille, arrosage, tonte</li>
+                </ul>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <span class="pill bg-green-100 text-green-900 dark:bg-green-800 dark:text-green-200">Nature</span>
+                  <span class="pill bg-gray-100 text-accent dark:bg-gray-700 dark:text-gray-100">Service public</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <!-- Fil vertical timeline stylé (optionnel, si besoin d’accent) -->
+        <style>
+          .timeline-ol {
+            border-left: 3px solid #e8e8e8;
+            margin-left: 1.1rem;
+            padding-left: 0.5rem;
+            position: relative;
+          }
+          .timeline-li { position: relative; margin-bottom: 2.8rem; padding-left: 1.8rem; }
+          .timeline-dot {
+            position: absolute;
+            left: -1.18rem;
+            top: 1.8rem;
+            width: 1.3rem;
+            height: 1.3rem;
+            background: linear-gradient(135deg, #38bdf8 0%, #ac38ec 100%);
+            border-radius: 999px;
+            z-index: 2;
+            border: 4px solid #fff;
+            box-shadow: 0 0 8px #3337;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.35s;
+          }
+          .group:hover .timeline-dot {
+            background: linear-gradient(135deg, #38bdf8 20%, #ac38ec 80%);
+            box-shadow: 0 0 16px #38bdf8b8;
+          }
+          .timeline-li:last-child { margin-bottom: 0; }
+        </style>
+      </div>
     </section>
-    <section id="education" class="max-w-3xl mx-auto">
-      <h2 class="text-4xl font-extrabold mb-2 text-[#222] dark:text-[#f1f1f1]">Formation et diplômes</h2>
-      <p class="text-gray-700 dark:text-gray-400 mb-8">Mon parcours académique.</p>
-      <ol class="timeline-ol">
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">3ème Année BUT QLIO</h3><span class="timeline-date">Depuis 2022</span></div><div class="timeline-tech">IUT Lumière Lyon 2 Bron</div><div class="timeline-desc">BUT Qualité Logistique Industrielle et Organisation</div></li>
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">Diplôme National du Baccalauréat</h3><span class="timeline-date">2022</span></div><div class="timeline-tech">Option STI2D Cluses</div></li>
-        <li class="timeline-li"><span class="timeline-dot"></span><div class="timeline-header"><h3 class="timeline-title">Diplôme National des Jeunes Sapeurs Pompiers</h3><span class="timeline-date">2018–2021</span></div><div class="timeline-tech">Centre de Secours Samoëns</div></li>
-      </ol>
-    </section>
+	
+	
+	
+    <!-- Etudes et diplômes -->
+		
+    <section id="education" class="max-w-3xl mx-auto mt-14 mb-16 px-2">
+  <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1]">Formation et diplômes</h2>
+  <p class="text-gray-700 dark:text-gray-400 mb-10 text-center text-lg">Mon parcours académique et certifications.</p>
+  <div class="relative">
+    <ol class="timeline-ol">
+      <!-- Diplôme 1 -->
+      <li class="timeline-li group">
+        <span class="timeline-dot"></span>
+        <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+          <div class="timeline-header flex items-center gap-3 mb-2">
+            <!-- Icône BUT -->
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-accent/10 dark:bg-accent/30 shadow mr-2">
+              <svg width="25" height="25" viewBox="0 0 32 32" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="8" width="20" height="14" rx="3" stroke="#2563eb" fill="none"/>
+                <path d="M16 8v14" stroke="#2563eb"/>
+                <path d="M12 14h8" stroke="#2563eb"/>
+              </svg>
+            </span>
+            <h3 class="timeline-title text-xl font-bold text-[#2563eb] dark:text-[#a4bfff]">3ème Année BUT QLIO</h3>
+            <span class="timeline-date">Depuis 2022</span>
+          </div>
+          <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">IUT Lumière Lyon 2 Bron</div>
+          <div class="timeline-desc">
+            <span class="pill bg-blue-100 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Qualité Logistique Industrielle et Organisation</span>
+          </div>
+        </div>
+      </li>
+      <!-- Diplôme 2 -->
+      <li class="timeline-li group">
+        <span class="timeline-dot"></span>
+        <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+          <div class="timeline-header flex items-center gap-3 mb-2">
+            <!-- Icône Bac -->
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-yellow-100 dark:bg-yellow-800 shadow mr-2">
+              <svg width="25" height="25" viewBox="0 0 32 32" fill="none" stroke="#eab308" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="16,5 28,13 16,21 4,13" stroke="#eab308" fill="none"/>
+                <path d="M16 21v6" stroke="#eab308"/>
+              </svg>
+            </span>
+            <h3 class="timeline-title text-xl font-bold text-[#eab308] dark:text-[#fde68a]">Diplôme National du Baccalauréat</h3>
+            <span class="timeline-date">2022</span>
+          </div>
+          <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">STI2D Cluses</div>
+          <div class="timeline-desc">
+            <span class="pill bg-yellow-100 text-yellow-900 dark:bg-yellow-800 dark:text-yellow-200">Option Sciences et Technologies</span>
+          </div>
+        </div>
+      </li>
+      <!-- Diplôme 3 -->
+      <li class="timeline-li group">
+        <span class="timeline-dot"></span>
+        <div class="relative bg-white dark:bg-[#232323] rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-7 py-6 transition hover:scale-[1.025] hover:shadow-2xl">
+          <div class="timeline-header flex items-center gap-3 mb-2">
+            <!-- Icône JSP -->
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-red-100 dark:bg-red-800 shadow mr-2">
+              <svg width="25" height="25" viewBox="0 0 32 32" fill="none" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="16" cy="16" r="10" stroke="#ef4444" fill="none"/>
+                <path d="M16 12v8" stroke="#ef4444"/>
+                <path d="M12 16h8" stroke="#ef4444"/>
+              </svg>
+            </span>
+            <h3 class="timeline-title text-xl font-bold text-[#ef4444] dark:text-[#fca5a5]">Diplôme JSP</h3>
+            <span class="timeline-date">2018–2021</span>
+          </div>
+          <div class="timeline-tech font-medium text-accent/80 dark:text-white mb-2">Centre de Secours Samoëns</div>
+          <div class="timeline-desc">
+            <span class="pill bg-red-100 text-red-900 dark:bg-red-800 dark:text-red-200">Jeunes Sapeurs Pompiers</span>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <style>
+      .timeline-ol {
+        border-left: 3px solid #e8e8e8;
+        margin-left: 1.1rem;
+        padding-left: 0.5rem;
+        position: relative;
+      }
+      .timeline-li { position: relative; margin-bottom: 2.8rem; padding-left: 1.8rem; }
+      .timeline-dot {
+        position: absolute;
+        left: -1.18rem;
+        top: 2.1rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        background: linear-gradient(135deg, #2563eb 0%, #eab308 50%, #ef4444 100%);
+        border-radius: 999px;
+        z-index: 2;
+        border: 4px solid #fff;
+        box-shadow: 0 0 8px #3337;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.35s;
+      }
+      .group:hover .timeline-dot {
+        background: linear-gradient(135deg, #2563eb 20%, #eab308 60%, #ef4444 80%);
+        box-shadow: 0 0 16px #2563ebb8;
+      }
+      .timeline-li:last-child { margin-bottom: 0; }
+    </style>
+  </div>
+</section>
+	
+
     <!-- Projets -->
   
   <section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
@@ -1133,30 +1352,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-   
+<!-- Compétances-->
    <section id="skills" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
   <h2 class="text-4xl font-extrabold mb-4 text-[#222] dark:text-[#f1f1f1] flex items-center justify-center">
     Compétences
@@ -1165,38 +1361,42 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
     <!-- Bloc Métier -->
-    <div class="rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-8 py-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl bg-transparent dark:bg-transparent">
-      <div class="flex items-center gap-2 mb-3">
-        <!-- Icône métier : Engrenages (gestion/qualité) -->
-        <svg width="35" height="35" fill="none" stroke="#222" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32" class="text-accent dark:text-white">
-          <circle cx="16" cy="16" r="6" stroke="#222" fill="none"/>
-          <path d="M16 2v4M16 26v4M2 16h4M26 16h4M6.34 6.34l2.83 2.83M22.83 22.83l2.83 2.83M6.34 25.66l2.83-2.83M22.83 9.17l2.83-2.83" stroke="#222"/>
-        </svg>
-        <h3 class="text-xl font-bold text-center text-accent dark:text-white">Métier</h3>
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 px-8 py-7 flex flex-col items-center transition hover:scale-[1.04] hover:shadow-2xl bg-white dark:bg-[#232323]">
+      <div class="flex items-center gap-2 mb-4">
+        <!-- Icône Engrenages (gestion/qualité) -->
+        <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 dark:bg-accent/30 shadow">
+          <svg width="38" height="38" fill="none" stroke="#222" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="6" stroke="#18181b" fill="none"/>
+            <path d="M16 2v4M16 26v4M2 16h4M26 16h4M6.34 6.34l2.83 2.83M22.83 22.83l2.83 2.83M6.34 25.66l2.83-2.83M22.83 9.17l2.83-2.83" stroke="#18181b"/>
+          </svg>
+        </span>
+        <h3 class="text-xl font-bold text-center text-accent dark:text-white ml-1">Métier</h3>
       </div>
-      <div class="flex flex-wrap gap-3 justify-center mt-3">
+      <div class="flex flex-wrap gap-3 justify-center mt-2">
         <span class="skill-chip bg-accent text-white border-none shadow">Gestion des incidents fournisseurs</span>
         <span class="skill-chip bg-accent/90 text-white border-none shadow">Identifier les flux physiques et d'information</span>
         <span class="skill-chip bg-accent/80 text-white border-none shadow">Mise en application des outils QQOQCP, PDCA, 5S</span>
       </div>
     </div>
     <!-- Bloc Informatique -->
-    <div class="rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 px-8 py-6 flex flex-col items-center transition hover:scale-105 hover:shadow-2xl bg-transparent dark:bg-transparent">
-      <div class="flex items-center gap-2 mb-3">
-        <!-- Icône informatique : Ordinateur -->
-        <svg width="35" height="35" fill="none" stroke="#222" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32" class="text-accent dark:text-white">
-          <rect x="5" y="7" width="22" height="15" rx="3" stroke="#222" fill="none"/>
-          <rect x="10" y="23" width="12" height="3" rx="1" stroke="#222" fill="none"/>
-        </svg>
-        <h3 class="text-xl font-bold text-center text-accent dark:text-white">Informatique</h3>
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 px-8 py-7 flex flex-col items-center transition hover:scale-[1.04] hover:shadow-2xl bg-white dark:bg-[#232323]">
+      <div class="flex items-center gap-2 mb-4">
+        <!-- Icône Ordinateur -->
+        <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 shadow">
+          <svg width="38" height="38" fill="none" stroke="#2563eb" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 32 32">
+            <rect x="5" y="7" width="22" height="15" rx="3" stroke="#2563eb" fill="none"/>
+            <rect x="10" y="23" width="12" height="3" rx="1" stroke="#2563eb" fill="none"/>
+          </svg>
+        </span>
+        <h3 class="text-xl font-bold text-center text-[#2563eb] dark:text-[#a4bfff] ml-1">Informatique</h3>
       </div>
-      <div class="flex flex-wrap gap-3 justify-center mt-3">
-        <span class="skill-chip bg-white border-accent shadow">Certification PIX</span>
-        <span class="skill-chip bg-white border-accent shadow">Microsoft Office</span>
-        <span class="skill-chip bg-white border-accent shadow">Sage X3 Prologiciel ERP</span>
-        <span class="skill-chip bg-white border-accent shadow">Figma</span>
-        <span class="skill-chip bg-white border-accent shadow">Photoshop</span>
-        <span class="skill-chip bg-white border-accent shadow">Solidworks</span>
+      <div class="flex flex-wrap gap-3 justify-center mt-2">
+        <span class="skill-chip bg-white border-accent text-accent shadow">Certification PIX</span>
+        <span class="skill-chip bg-white border-accent text-accent shadow">Microsoft Office</span>
+        <span class="skill-chip bg-white border-accent text-accent shadow">Sage X3 Prologiciel ERP</span>
+        <span class="skill-chip bg-white border-accent text-accent shadow">Figma</span>
+        <span class="skill-chip bg-white border-accent text-accent shadow">Photoshop</span>
+        <span class="skill-chip bg-white border-accent text-accent shadow">Solidworks</span>
       </div>
     </div>
   </div>
@@ -1207,28 +1407,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
    
    
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+<!-- Langues -->
     <section id="languages" class="max-w-3xl mx-auto">
       <h2 class="text-4xl font-extrabold mb-8 text-center text-[#222] dark:text-[#f1f1f1]">Langues</h2>
       <div class="flex flex-wrap justify-center gap-8">
