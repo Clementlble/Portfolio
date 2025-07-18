@@ -1062,87 +1062,81 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
 	
 
     <!-- Projets -->
-  
   <section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
   <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1] flex items-center justify-center gap-3">
     Projets
   </h2>
   <p class="text-gray-700 dark:text-gray-400 mb-10 text-center text-lg">Quelques projets notables et réalisations.</p>
-  <div class="flex flex-col gap-8">
+  <div class="flex flex-col gap-10">
     <!-- Projet 1 -->
-    <div class="relative flex items-stretch group project-card bg-transparent dark:bg-transparent rounded-3xl border border-gray-200 dark:border-gray-700 shadow-xl transition hover:scale-[1.03] hover:shadow-2xl px-6 py-7 overflow-hidden">
-      <!-- Timeline dot -->
-      
-      <div class="flex flex-col md:flex-row items-center gap-7 w-full">
-        <!-- Logo/visuel (cube sans fond) -->
-        <div class="flex-shrink-0">
-          <div class="w-24 h-24 rounded-2xl flex items-center justify-center border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden bg-transparent dark:bg-transparent">
-            <img src="https://cdn.brightanalytics.eu/wp-content/uploads/Sage-X3-logo.png" alt="Sage X3" class="w-16 h-16 object-contain" />
-          </div>
+    <div class="relative group rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] transition hover:scale-[1.03] hover:shadow-2xl px-8 py-8 flex flex-col md:flex-row items-center overflow-hidden">
+      <!-- Barre latérale colorée réduite -->
+      <div class="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-blue-400 via-blue-600 to-blue-900 dark:from-blue-700 dark:via-blue-800 dark:to-blue-900 rounded-tl-3xl rounded-bl-3xl"></div>
+      <!-- Logo/visuel -->
+      <div class="flex-shrink-0 mb-5 md:mb-0 md:mr-8 flex items-center justify-center z-10">
+        <div class="w-24 h-24 rounded-2xl flex items-center justify-center border border-gray-200 dark:border-gray-700 shadow-lg bg-white dark:bg-[#232323] overflow-hidden">
+          <img src="https://cdn.brightanalytics.eu/wp-content/uploads/Sage-X3-logo.png" alt="Sage X3" class="w-16 h-16 object-contain" />
         </div>
-        <!-- Texte -->
-        <div class="flex-1">
-          <div class="flex items-center gap-2 mb-2">
-            <h3 class="text-2xl font-bold text-accent dark:text-white">Intégration des gammes de contrôle sur l'ERP</h3>
-            <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200 ml-2">2024-2025</span>
-          </div>
-          <div class="flex flex-wrap gap-2 mb-2">
-            <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Excel</span>
-            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">ERP</span>
-           
-          </div>
-          <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 text-base mb-2">
-            <li>Automatisation du suivi qualité et reporting</li>
-            <li>Indicateurs en temps réel, adaptation de workflow</li>
-            <li>Conception interface utilisateur et formation équipes</li>
-          </ul>
-          <button class="inline-flex items-center gap-2 mt-2 text-blue-600 dark:text-blue-400 hover:underline text-sm font-semibold" onclick="showProjectDetail(0)">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 20 20">
-              <path d="M5 8l5 5 5-5"/>
-            </svg>
-            Voir la description détaillée
-          </button>
+      </div>
+      <!-- Texte -->
+      <div class="flex-1 z-10">
+        <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+          <h3 class="text-2xl font-bold text-accent dark:text-white">Intégration des gammes de contrôle sur l'ERP</h3>
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 dark:bg-blue-900 dark:text-blue-200 ml-0 md:ml-2 mt-2 md:mt-0">2024-2025</span>
         </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Excel</span>
+          <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">ERP</span>
+        </div>
+        <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 text-base mb-2">
+          <li>Automatisation du suivi qualité et reporting</li>
+          <li>Indicateurs en temps réel, adaptation de workflow</li>
+          <li>Conception interface utilisateur et formation équipes</li>
+        </ul>
+        <button class="inline-flex items-center gap-2 mt-2 text-blue-600 dark:text-blue-400 hover:underline text-sm font-semibold" onclick="showProjectDetail(0)">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 20 20">
+            <path d="M5 8l5 5 5-5"/>
+          </svg>
+          Voir la description détaillée
+        </button>
       </div>
     </div>
     <!-- Projet 2 -->
-    <div class="relative flex items-stretch group project-card bg-transparent dark:bg-transparent rounded-3xl border border-gray-200 dark:border-gray-700 shadow-xl transition hover:scale-[1.03] hover:shadow-2xl px-6 py-7 overflow-hidden">
-      <!-- Timeline dot -->
-     
-      <div class="flex flex-col md:flex-row items-center gap-7 w-full">
-        <!-- Logo/visuel (cube sans fond) -->
-        <div class="flex-shrink-0">
-          <div class="w-24 h-24 rounded-2xl flex items-center justify-center border border-gray-200 dark:border-gray-700 shadow-lg overflow-hidden bg-transparent dark:bg-transparent">
-            <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Startboard" class="w-16 h-16 object-contain" />
-          </div>
+    <div class="relative group rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] transition hover:scale-[1.03] hover:shadow-2xl px-8 py-8 flex flex-col md:flex-row items-center overflow-hidden">
+      <!-- Barre latérale colorée réduite -->
+      <div class="absolute left-0 top-0 h-full w-[2px] bg-gradient-to-b from-pink-400 via-pink-600 to-purple-500 dark:from-pink-700 dark:via-pink-800 dark:to-purple-900 rounded-tl-3xl rounded-bl-3xl"></div>
+      <!-- Logo/visuel -->
+      <div class="flex-shrink-0 mb-5 md:mb-0 md:mr-8 flex items-center justify-center z-10">
+        <div class="w-24 h-24 rounded-2xl flex items-center justify-center border border-gray-200 dark:border-gray-700 shadow-lg bg-white dark:bg-[#232323] overflow-hidden">
+          <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Startboard" class="w-16 h-16 object-contain" />
         </div>
-        <!-- Texte -->
-        <div class="flex-1">
-          <div class="flex items-center gap-2 mb-2">
-            <h3 class="text-2xl font-bold text-accent dark:text-white">Harmonisation des teintes</h3>
-            <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-pink-50 text-pink-700 dark:bg-pink-900 dark:text-pink-200 ml-2">2024-2025</span>
-          </div>
-          <div class="flex flex-wrap gap-2 mb-2">
-            <span class="pill bg-pink-200 text-pink-900 dark:bg-pink-800 dark:text-pink-200">React</span>
-            <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Firebase</span>
-            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Agile</span>
-          </div>
-          <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 text-base mb-2">
-            <li>Gestion et priorisation de projets en équipe</li>
-            <li>Stockage cloud, authentification sécurisée</li>
-            <li>Interface moderne, responsive & notifications</li>
-          </ul>
-          <button class="inline-flex items-center gap-2 mt-2 text-pink-600 dark:text-pink-400 hover:underline text-sm font-semibold" onclick="showProjectDetail(1)">
-            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 20 20">
-              <path d="M5 8l5 5 5-5"/>
-            </svg>
-            Voir la description détaillée
-          </button>
+      </div>
+      <!-- Texte -->
+      <div class="flex-1 z-10">
+        <div class="flex flex-col md:flex-row md:items-center gap-2 mb-2">
+          <h3 class="text-2xl font-bold text-accent dark:text-white">Harmonisation des teintes</h3>
+          <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-pink-50 text-pink-700 dark:bg-pink-900 dark:text-pink-200 ml-0 md:ml-2 mt-2 md:mt-0">2024-2025</span>
         </div>
+        <div class="flex flex-wrap gap-2 mb-2">
+          <span class="pill bg-pink-200 text-pink-900 dark:bg-pink-800 dark:text-pink-200">React</span>
+          <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Firebase</span>
+          <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Agile</span>
+        </div>
+        <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 text-base mb-2">
+          <li>Gestion et priorisation de projets en équipe</li>
+          <li>Stockage cloud, authentification sécurisée</li>
+          <li>Interface moderne, responsive & notifications</li>
+        </ul>
+        <button class="inline-flex items-center gap-2 mt-2 text-pink-600 dark:text-pink-400 hover:underline text-sm font-semibold" onclick="showProjectDetail(1)">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 20 20">
+            <path d="M5 8l5 5 5-5"/>
+          </svg>
+          Voir la description détaillée
+        </button>
       </div>
     </div>
   </div>
-  <!-- Description détaillée popup -->
+  <!-- Description détaillée popup (inchangée) -->
   <div id="projectDetailModal" class="fixed inset-0 z-[99999] bg-black/40 backdrop-blur-sm flex items-center justify-center" style="display:none;">
     <div class="bg-white dark:bg-[#232323] rounded-2xl shadow-2xl p-8 max-w-lg w-full border border-gray-200 dark:border-gray-700 relative animate-popup font-inter">
       <button onclick="closeProjectDetail()" class="absolute top-3 right-3 text-gray-400 hover:text-accent dark:hover:text-white focus:outline-none text-xl p-2 rounded-full bg-gray-100 dark:bg-[#232323] transition font-inter">
@@ -1152,6 +1146,25 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
     </div>
   </div>
 </section>
+<style>
+  /* Barre latérale colorée affinée pour harmonie visuelle sur les projets */
+  #projects .absolute {
+    transition: box-shadow 0.35s, background 0.35s;
+    z-index: 1;
+  }
+  #projects .group:hover > .absolute {
+    box-shadow: 0 0 18px #38bdf8b8;
+    filter: brightness(1.11) saturate(1.15);
+  }
+  @media (max-width:700px){
+    #projects .group { padding:1.2rem!important; flex-direction:column!important; }
+    #projects .group>div { flex-direction:column!important; gap:1rem!important; }
+    #projects .group img { width:60px!important; height:60px!important; }
+    #projects .group h3 { font-size:1.1rem!important; }
+    #projects .absolute { left: 0!important; top: 0!important; width: 4px!important; }
+  }
+</style>
+ 
 <script>
   // Animation popup (déjà présent dans contact)
   function showProjectDetail(idx){
@@ -1343,7 +1356,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
 </section>
 
   </main>
-  <footer>© 2025 Clément Lenoble</footer>
+  <footer> © 2025-Design and develop by Clément Lenoble</footer>
   <button id="scrollTopBtn" aria-label="Retour en haut">↑</button>
  <script>
     // Ajoute une classe premium-scrolled à la navbar dès qu'on scroll > 20px
