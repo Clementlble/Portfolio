@@ -512,7 +512,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
   main,.max-w-3xl,.max-w-5xl,section,.hero-content,.rounded-3xl{transform:scale(0.97);margin-left:auto!important;margin-right:auto!important;}
 }
 .menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;width:2.5rem;height:2.5rem;border-radius:9999px;background:var(--pool-blue-light);border:none;cursor:pointer;margin-left:0.5rem;transition:background 0.2s;}
-.menu-toggle span{display:block;width:1.6rem;height=0.22rem;background:var(--pool-blue-dark);margin:0.18rem 0;border-radius:2px;transition:all 0.3s;}
+.menu-toggle span{display:block;width=1.6rem;height=0.22rem;background:var(--pool-blue-dark);margin:0.18rem 0;border-radius:2px;transition:all 0.3s;}
 .menu-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
 .menu-toggle.open span:nth-child(2){opacity:0;}
 .menu-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
@@ -726,7 +726,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
     box-shadow: none !important;
     margin-top: 40px !important; /* Espace visible sous la barre de menu sur mobile */
   }
-}
+  }
   </style>
 </head>
 <body class="bg-surface-light dark:bg-surface-dark text-gray-900 dark:text-gray-100 font-inter relative transition-colors duration-500">
@@ -758,7 +758,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
       </a>
       <a class="social-link" href="https://www.instagram.com/centric.concept/" target="_blank" rel="noopener" aria-label="Instagram">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><path d="M16.5 7.5h.01"/><circle cx="12" cy="12" r="5"/>
+          <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="5"/><circle cx="16.5" cy="7.5" r="1.2"/>
         </svg>
       </a>
       <a href="#contact" class="ml-2 px-3 py-2 bg-accent text-white rounded-[12px] text-xs font-semibold shadow hover:bg-accent-dark transition-colors focus:outline-none focus:ring-2 focus:ring-accent">
@@ -792,7 +792,9 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
         </a>
         <a class="social-link" href="https://www.instagram.com/centric.concept/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><path d="M16.5 7.5h.01"/><circle cx="12" cy="12" r="5"/>
+            <rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="16.5" cy="7.5" r="1.2"/>
           </svg>
         </a>
       </div>
@@ -822,12 +824,14 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
     </section>
     <section id="about" class="max-w-3xl mx-auto">
       <h2 class="text-4xl font-extrabold mb-8 text-center text-[#222] dark:text-[#f1f1f1]">À propos</h2>
-      <div class="flex flex-col items-center gap-8">
+      <div class="flex flex-col items-center gap-8 text-center">
         <p class="text-lg sm:text-xl leading-relaxed text-[#222] dark:text-[#f1f1f1]">
           👋 Bienvenue sur mon portfolio, je m'appelle Clément et je suis en BUT QLIO à Lyon 2 en alternance.
-Je mène des missions en QSE, optimise les processus et développe des outils numériques en entreprise.
-En parallèle, j'ai crée ma propre marque de vêtements alliant design, e-commerce et esprit entrepreneurial.<br>
+          Je mène des missions en QSE, optimise les processus et développe des outils numériques en entreprise.
+          En parallèle, j'ai crée ma propre marque de vêtements alliant design, e-commerce et esprit entrepreneurial.<br>
+        </p>
       </div>
+    </section>
 	  
 	  <!-- Expériences -->
     </section>
@@ -1200,6 +1204,49 @@ En parallèle, j'ai crée ma propre marque de vêtements alliant design, e-comme
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galerie" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
+  <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1] flex items-center justify-center gap-3">
+    Réalisations & Galerie
+  </h2>
+  <p class="text-gray-700 dark:text-gray-400 mb-10 text-center text-lg">
+    Quelques exemples visuels de mes projets, créations graphiques et prototypes.
+  </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Exemple 1 -->
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] overflow-hidden flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Projet graphique 1" class="w-full h-56 object-cover mb-4">
+      <div class="px-5 pb-5 w-full">
+        <h3 class="text-lg font-bold text-accent dark:text-white mb-2">Mockup E-commerce</h3>
+        <p class="text-gray-700 dark:text-gray-300 text-sm">Prototype d’interface e-commerce pour Centric Concept, design responsive et branding personnalisé.</p>
+      </div>
+    </div>
+    <!-- Exemple 2 -->
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] overflow-hidden flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Projet graphique 2" class="w-full h-56 object-cover mb-4">
+      <div class="px-5 pb-5 w-full">
+               <h3 class="text-lg font-bold text-accent dark:text-white mb-2">Création graphique</h3>
+        <p class="text-gray-700 dark:text-gray-300 text-sm">Affiche promotionnelle réalisée sous Photoshop pour une campagne marketing Centric Concept.</p>
+      </div>
+    </div>
+    <!-- Exemple 3 -->
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] overflow-hidden flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Projet graphique 3" class="w-full h-56 object-cover mb-4">
+      <div class="px-5 pb-5 w-full">
+        <h3 class="text-lg font-bold text-accent dark:text-white mb-2">Prototype produit</h3>
+        <p class="text-gray-700 dark:text-gray-300 text-sm">Prototype de vêtement, design et branding réalisés pour la nouvelle collection Centric Concept.</p>
+      </div>
+    </div>
+    <!-- Exemple 4 -->
+    <div class="rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] overflow-hidden flex flex-col items-center">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Projet graphique 4" class="w-full h-56 object-cover mb-4">
+      <div class="px-5 pb-5 w-full">
+        <h3 class="text-lg font-bold text-accent dark:text-white mb-2">Prototype d’application</h3>
+        <p class="text-gray-700 dark:text-gray-300 text-sm">Maquette d’application mobile pour la gestion QSE, réalisée sous Figma.</p>
       </div>
     </div>
   </div>
