@@ -1184,11 +1184,8 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
     </style>
   </div>
 </section>
-	
-
-    <!-- Projets -->
-  
-  <section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
+<!-- Projets -->
+<section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
   <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1] flex items-center justify-center gap-3">
     Projets
   </h2>
@@ -1210,7 +1207,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
       <!-- Projets Entreprise -->
       <div class="w-full px-2" id="containerEntreprise">
         <!-- Projet 1 -->
-        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative">
+        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative block cursor-pointer" data-project="erp">
           <div class="flex gap-3 items-center mb-3">
             <img src="https://cdn.brightanalytics.eu/wp-content/uploads/Sage-X3-logo.png" alt="Sage X3" class="w-12 h-12 rounded-xl object-contain border border-gray-200 dark:border-gray-700">
             <h3 class="text-2xl font-bold text-accent mb-0">Intégration des gammes de contrôle sur l'ERP Sage X3</h3>
@@ -1226,23 +1223,10 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Excel</span>
             <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">ERP</span>
           </div>
-          <!-- Bouton + -->
-          <button class="expand-btn absolute bottom-2 right-2 bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center shadow hover:bg-accent-dark transition" onclick="toggleDesc(this, 'desc-entreprise-1')" aria-label="Voir plus">
-            <span class="font-bold text-base">+</span>
-          </button>
-          <!-- Description détaillée cachée -->
-          <div id="desc-entreprise-1" class="desc-detail hidden mt-6 bg-gray-50 dark:bg-[#18181b] rounded-xl px-5 py-4 text-gray-700 dark:text-gray-100 text-base shadow">
-            <strong>Description détaillée :</strong><br>
-            Ce projet vise à automatiser la gestion qualité : indicateurs en temps réel, suivi des non-conformités, adaptation du workflow au sein de l’ERP Sage X3 de Profalux. J’ai conçu l’interface côté utilisateur, formé les équipes et assuré le reporting.
-            <ul class="mt-2 list-disc pl-5 text-sm">
-              <li>Intégration technique sur ERP</li>
-              <li>Automatisation des processus qualité</li>
-              <li>Documentation et accompagnement utilisateurs</li>
-            </ul>
-          </div>
+          <div class="mt-5 text-xs font-semibold text-blue-600 dark:text-blue-200 text-right">Clique pour en découvrir plus</div>
         </div>
         <!-- Projet 2 -->
-        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative">
+        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative block cursor-pointer" data-project="harmonisation">
           <div class="flex gap-3 items-center mb-3">
             <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Startboard" class="w-12 h-12 rounded-xl object-contain border border-gray-200 dark:border-gray-700">
             <h3 class="text-2xl font-bold text-pink-600 mb-0">Harmonisation des teintes</h3>
@@ -1259,26 +1243,13 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Firebase</span>
             <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Agile</span>
           </div>
-          <!-- Bouton + -->
-          <button class="expand-btn absolute bottom-2 right-2 bg-accent text-white rounded-full w-6 h-6 flex items-center justify-center shadow hover:bg-accent-dark transition" onclick="toggleDesc(this, 'desc-entreprise-2')" aria-label="Voir plus">
-            <span class="font-bold text-base">+</span>
-          </button>
-          <!-- Description détaillée cachée -->
-          <div id="desc-entreprise-2" class="desc-detail hidden mt-6 bg-gray-50 dark:bg-[#18181b] rounded-xl px-5 py-4 text-gray-700 dark:text-gray-100 text-base shadow">
-            <strong>Description détaillée :</strong><br>
-            Startboard est une webapp pour piloter des projets en équipe : planning visuel, backlog, affectation, notifications et suivi d’avancement. J’ai développé l’authentification via Firebase et toute la partie front-end React.
-            <ul class="mt-2 list-disc pl-5 text-sm">
-              <li>Gestion de projet agile</li>
-              <li>Interface moderne et notifications personnalisées</li>
-              <li>Stockage cloud & sécurité</li>
-            </ul>
-          </div>
+          <div class="mt-5 text-xs font-semibold text-pink-600 dark:text-pink-200 text-right">Clique pour en découvrir plus</div>
         </div>
       </div>
       <!-- Projets Marque -->
       <div class="w-full px-2" id="containerMarque">
         <!-- Projet Marque 1 -->
-        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative">
+        <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative block cursor-pointer" data-project="marque">
           <div class="flex gap-3 items-center mb-3">
             <img src="https://centriconcept.com/cdn/shop/files/4516456.png?v=1731014516&width=600" alt="Centric Concept" class="w-12 h-12 rounded-xl object-cover border border-gray-200 dark:border-gray-700">
             <h3 class="text-2xl font-bold text-pink-600 mb-0">Création de la marque Centric Concept</h3>
@@ -1297,26 +1268,162 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-gray-100 text-accent dark:bg-gray-700 dark:text-gray-100">E-commerce</span>
             <span class="pill bg-yellow-100 text-yellow-900 dark:bg-yellow-800 dark:text-yellow-200">Gestion financière</span>
           </div>
-          <!-- Bouton + -->
-          <button class="expand-btn absolute bottom-2 right-2 bg-pink-600 text-white rounded-full w-6 h-6 flex items-center justify-center shadow hover:bg-pink-800 transition" onclick="toggleDesc(this, 'desc-marque-1')" aria-label="Voir plus">
-            <span class="font-bold text-base">+</span>
-          </button>
-          <!-- Description détaillée cachée -->
-          <div id="desc-marque-1" class="desc-detail hidden mt-6 bg-gray-50 dark:bg-[#18181b] rounded-xl px-5 py-4 text-gray-700 dark:text-gray-100 text-base shadow">
-            <strong>Description détaillée :</strong><br>
-            Centric Concept est une marque de vêtements fondée en 2023, alliant design, e-commerce et gestion entrepreneuriale. J’ai géré toute la chaîne : choix des fournisseurs, création graphique, développement du site (Shopify/Wordpress), et gestion administrative.
-            <ul class="mt-2 list-disc pl-5 text-sm">
-              <li>Gestion des commandes et fournisseurs</li>
-              <li>Design et conception des collections</li>
-              <li>Développement du site e-commerce</li>
-              <li>Pilotage de la gestion financière et administrative</li>
-            </ul>
-          </div>
+          <div class="mt-5 text-xs font-semibold text-pink-600 dark:text-pink-200 text-right">Clique pour en découvrir plus</div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Overlay détail projet (juste avant </body>) -->
+<div id="projectOverlay" class="fixed inset-0 z-[10000] bg-transparent flex items-center justify-center pointer-events-none" style="display:none;">
+  <div class="bg-white dark:bg-[#232323] rounded-3xl shadow-2xl max-w-2xl w-full p-7 relative overflow-y-auto max-h-[85vh] mt-20 pointer-events-auto">
+    <button id="closeProjectOverlay" class="absolute top-5 right-6 text-gray-400 hover:text-accent dark:hover:text-white text-2xl font-bold">&times;</button>
+    <div id="projectDetailsContent"></div>
+  </div>
+</div>
+
+<script>
+const projectOverlay = document.getElementById('projectOverlay');
+const closeProjectOverlay = document.getElementById('closeProjectOverlay');
+const projectDetailsContent = document.getElementById('projectDetailsContent');
+
+const projectDetails = {
+  erp: `
+    <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Intégration des gammes de contrôle sur l'ERP Sage X3</h1>
+    <img src="https://cdn.brightanalytics.eu/wp-content/uploads/Sage-X3-logo.png" alt="Sage X3" class="w-24 h-24 rounded-xl object-contain mb-4">
+    <h2 class="text-xl font-bold mb-2 mt-4 text-accent">Contexte</h2>
+    <p>Automatisation de la gestion qualité : indicateurs en temps réel, suivi des non-conformités, adaptation du workflow dans Sage X3 chez Profalux.</p>
+    <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
+    <ul class="list-disc pl-5 mb-6">
+      <li>Intégration technique sur ERP</li>
+      <li>Automatisation des processus qualité</li>
+      <li>Conception interface utilisateur</li>
+      <li>Formation des équipes</li>
+      <li>Reporting et documentation</li>
+    </ul>
+    <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Screenshot ERP" class="w-full rounded-xl mb-4">
+    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Indicateurs" class="w-full rounded-xl mb-4">
+  `,
+  harmonisation: `
+    <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Harmonisation des teintes</h1>
+    <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Harmonisation" class="w-24 h-24 rounded-xl object-contain mb-4">
+    <h2 class="text-xl font-bold mb-2 mt-4 text-pink-600">Contexte</h2>
+    <p>Application web pour la gestion et harmonisation des couleurs produits, priorisation des projets et notifications.</p>
+    <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
+    <ul class="list-disc pl-5 mb-6">
+      <li>Gestion agile de projets en équipe</li>
+      <li>Développement interface moderne et responsive</li>
+      <li>Authentification sécurisée avec Firebase</li>
+      <li>Stockage cloud</li>
+    </ul>
+    <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Projet harmonisation" class="w-full rounded-xl mb-4">
+  `,
+  marque: `
+    <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Création de la marque Centric Concept</h1>
+    <img src="https://centriconcept.com/cdn/shop/files/4516456.png?v=1731014516&width=600" alt="Centric Concept" class="w-24 h-24 rounded-xl object-cover mb-4">
+    <h2 class="text-xl font-bold mb-2 mt-4 text-pink-600">Contexte</h2>
+    <p>Lancement de la marque Centric Concept : gestion fournisseurs, création graphique, développement e-commerce, branding et marketing.</p>
+    <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
+    <ul class="list-disc pl-5 mb-6">
+      <li>Design, branding et conception collections</li>
+      <li>Développement du site e-commerce (Shopify/Wordpress)</li>
+      <li>Gestion administrative et financière</li>
+      <li>Marketing et animation communauté</li>
+    </ul>
+    <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Design Centric Concept" class="w-full rounded-xl mb-4">
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Mockup E-commerce" class="w-full rounded-xl mb-4">
+  `
+};
+
+// Effet de survol sur la carte active
+let currentCard = null;
+
+document.querySelectorAll('.project-card[data-project]').forEach(card => {
+  card.addEventListener('click', function() {
+    const key = card.getAttribute('data-project');
+    if (projectDetails[key]) {
+      projectDetailsContent.innerHTML = projectDetails[key];
+      projectOverlay.style.display = 'flex';
+      projectOverlay.classList.remove('pointer-events-none'); // permet de cliquer
+      document.body.style.overflow = 'hidden';
+      // Ajout survol carte active
+      if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
+      card.classList.add('ring-4', 'ring-accent', 'ring-opacity-50');
+      currentCard = card;
+    }
+  });
+});
+closeProjectOverlay.addEventListener('click', function() {
+  projectOverlay.style.display = 'none';
+  projectOverlay.classList.add('pointer-events-none');
+  projectDetailsContent.innerHTML = '';
+  document.body.style.overflow = '';
+  if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
+});
+projectOverlay.addEventListener('click', function(e){
+  if(e.target === projectOverlay){
+    projectOverlay.style.display = 'none';
+    projectOverlay.classList.add('pointer-events-none');
+    projectDetailsContent.innerHTML = '';
+    document.body.style.overflow = '';
+    if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && projectOverlay.style.display === 'flex') {
+    projectOverlay.style.display = 'none';
+    projectOverlay.classList.add('pointer-events-none');
+    projectDetailsContent.innerHTML = '';
+    document.body.style.overflow = '';
+    if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
+  }
+});
+</script>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
 <script>
   const btnEntreprise = document.getElementById('btnEntreprise');
   const btnMarque = document.getElementById('btnMarque');
