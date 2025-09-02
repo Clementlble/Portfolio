@@ -1184,14 +1184,13 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
     </style>
   </div>
 </section>
-<!-- Projets -->
+
+<!-- SECTION PROJETS avec overlay flou qui couvre toute la page, y compris la barre de navigation -->
 <section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
   <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1] flex items-center justify-center gap-3">
     Projets
   </h2>
   <p class="text-gray-700 dark:text-gray-400 mb-10 text-center text-lg">Mes plus gros projets, classés par catégorie.</p>
-  
-  <!-- Boutons de switch -->
   <div class="flex justify-center gap-4 mb-10">
     <button id="btnEntreprise" class="px-5 py-2 rounded-full font-semibold shadow transition" aria-selected="true">
       Alternance
@@ -1200,11 +1199,8 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
       Marque
     </button>
   </div>
-
-  <!-- Conteneur animé -->
   <div id="projectsSlider" class="relative w-full h-auto min-h-[380px] overflow-hidden">
     <div id="projectsInner" class="flex transition-transform duration-700 ease-in-out" style="width:200%;transform:translateX(0);">
-      <!-- Projets Entreprise -->
       <div class="w-full px-2" id="containerEntreprise">
         <!-- Projet 1 -->
         <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative block cursor-pointer" data-project="erp">
@@ -1223,7 +1219,14 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Excel</span>
             <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">ERP</span>
           </div>
-          <div class="mt-5 text-xs font-semibold text-blue-600 dark:text-blue-200 text-right">Clique pour en découvrir plus</div>
+          <div class="mt-5 flex justify-end items-center">
+            <span class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-200 text-sm font-semibold transition-colors hover:bg-blue-200 dark:hover:bg-blue-800 cursor-pointer flex items-center gap-2">
+              <svg width="19" height="19" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 10h8M11 7l3 3-3 3"/>
+              </svg>
+              <span class="sr-only">Voir le détail</span>
+            </span>
+          </div>
         </div>
         <!-- Projet 2 -->
         <div class="project-card rounded-3xl shadow-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#232323] px-8 py-8 mb-8 relative block cursor-pointer" data-project="harmonisation">
@@ -1243,7 +1246,14 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Firebase</span>
             <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Agile</span>
           </div>
-          <div class="mt-5 text-xs font-semibold text-pink-600 dark:text-pink-200 text-right">Clique pour en découvrir plus</div>
+          <div class="mt-5 flex justify-end items-center">
+            <span class="inline-block px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-800 text-pink-600 dark:text-pink-200 text-sm font-semibold transition-colors hover:bg-pink-200 dark:hover:bg-pink-700 cursor-pointer flex items-center gap-2">
+              <svg width="19" height="19" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 10h8M11 7l3 3-3 3"/>
+              </svg>
+              <span class="sr-only">Voir le détail</span>
+            </span>
+          </div>
         </div>
       </div>
       <!-- Projets Marque -->
@@ -1268,26 +1278,47 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <span class="pill bg-gray-100 text-accent dark:bg-gray-700 dark:text-gray-100">E-commerce</span>
             <span class="pill bg-yellow-100 text-yellow-900 dark:bg-yellow-800 dark:text-yellow-200">Gestion financière</span>
           </div>
-          <div class="mt-5 text-xs font-semibold text-pink-600 dark:text-pink-200 text-right">Clique pour en découvrir plus</div>
+          <div class="mt-5 flex justify-end items-center">
+            <span class="inline-block px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-800 text-pink-600 dark:text-pink-200 text-sm font-semibold transition-colors hover:bg-pink-200 dark:hover:bg-pink-700 cursor-pointer flex items-center gap-2">
+              <svg width="19" height="19" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 10h8M11 7l3 3-3 3"/>
+              </svg>
+              <span class="sr-only">Voir le détail</span>
+            </span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Overlay détail projet (juste avant </body>) -->
-<div id="projectOverlay" class="fixed inset-0 z-[10000] bg-transparent flex items-center justify-center pointer-events-none" style="display:none;">
-  <div class="bg-white dark:bg-[#232323] rounded-3xl shadow-2xl max-w-2xl w-full p-7 relative overflow-y-auto max-h-[85vh] mt-20 pointer-events-auto">
+<!-- OVERLAY PROJET, flou sur toute la page -->
+<style>
+  #projectOverlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99999 !important;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(18px) saturate(130%);
+    -webkit-backdrop-filter: blur(18px) saturate(130%);
+    display: none;
+	margin-top: 0rem;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+  }
+  #projectOverlay.active {
+    display: flex;
+  }
+</style>
+<div id="projectOverlay">
+  <div class="bg-white dark:bg-[#232323] rounded-3xl shadow-2xl max-w-2xl w-full p-7 relative overflow-y-auto max-h-[85vh] pointer-events-auto">
     <button id="closeProjectOverlay" class="absolute top-5 right-6 text-gray-400 hover:text-accent dark:hover:text-white text-2xl font-bold">&times;</button>
     <div id="projectDetailsContent"></div>
   </div>
 </div>
 
 <script>
-const projectOverlay = document.getElementById('projectOverlay');
-const closeProjectOverlay = document.getElementById('closeProjectOverlay');
-const projectDetailsContent = document.getElementById('projectDetailsContent');
-
 const projectDetails = {
   erp: `
     <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Intégration des gammes de contrôle sur l'ERP Sage X3</h1>
@@ -1339,7 +1370,9 @@ const projectDetails = {
   `
 };
 
-// Effet de survol sur la carte active
+const projectOverlay = document.getElementById('projectOverlay');
+const closeProjectOverlay = document.getElementById('closeProjectOverlay');
+const projectDetailsContent = document.getElementById('projectDetailsContent');
 let currentCard = null;
 
 document.querySelectorAll('.project-card[data-project]').forEach(card => {
@@ -1347,10 +1380,8 @@ document.querySelectorAll('.project-card[data-project]').forEach(card => {
     const key = card.getAttribute('data-project');
     if (projectDetails[key]) {
       projectDetailsContent.innerHTML = projectDetails[key];
-      projectOverlay.style.display = 'flex';
-      projectOverlay.classList.remove('pointer-events-none'); // permet de cliquer
+      projectOverlay.classList.add('active');
       document.body.style.overflow = 'hidden';
-      // Ajout survol carte active
       if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
       card.classList.add('ring-4', 'ring-accent', 'ring-opacity-50');
       currentCard = card;
@@ -1358,25 +1389,22 @@ document.querySelectorAll('.project-card[data-project]').forEach(card => {
   });
 });
 closeProjectOverlay.addEventListener('click', function() {
-  projectOverlay.style.display = 'none';
-  projectOverlay.classList.add('pointer-events-none');
+  projectOverlay.classList.remove('active');
   projectDetailsContent.innerHTML = '';
   document.body.style.overflow = '';
   if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
 });
 projectOverlay.addEventListener('click', function(e){
   if(e.target === projectOverlay){
-    projectOverlay.style.display = 'none';
-    projectOverlay.classList.add('pointer-events-none');
+    projectOverlay.classList.remove('active');
     projectDetailsContent.innerHTML = '';
     document.body.style.overflow = '';
     if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
   }
 });
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape' && projectOverlay.style.display === 'flex') {
-    projectOverlay.style.display = 'none';
-    projectOverlay.classList.add('pointer-events-none');
+  if (e.key === 'Escape' && projectOverlay.classList.contains('active')) {
+    projectOverlay.classList.remove('active');
     projectDetailsContent.innerHTML = '';
     document.body.style.overflow = '';
     if (currentCard) currentCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
@@ -1422,6 +1450,9 @@ document.addEventListener('keydown', e => {
 
 
 
+   
+   
+   
    
 
 <script>
