@@ -1205,7 +1205,7 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
   </div>
 </section>
 
-<!-- SECTION PROJETS avec overlay flou qui couvre toute la page, y compris la barre de navigation -->
+<!-- SECTION PROJETS -->
 <section id="projects" class="max-w-3xl mx-auto mt-20 mb-20 px-2">
   <h2 class="text-4xl font-extrabold mb-6 text-center text-[#222] dark:text-[#f1f1f1] flex items-center justify-center gap-3">
     Projets
@@ -1230,14 +1230,15 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
           </div>
           <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200 mb-2">2024-2025</span>
           <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 mb-2">
-            <li>Automatisation du suivi qualité et reporting</li>
-            <li>Indicateurs en temps réel, adaptation de workflow</li>
-            <li>Conception interface utilisateur et formation équipes</li>
-            <li>ERP Sage X3 chez Profalux</li>
+            <li>Uniformisation et centralisation des autocontrôles</li>
+            <li>Optimisation du suivi et de la tracabilité</li>
+            <li>Mail automatique en cas de non conformité</li>
+            <li>Gain de temps pour les opérateurs</li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-2">
-            <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Excel</span>
-            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">ERP</span>
+            <span class="pill bg-blue-200 text-blue-900 dark:bg-blue-800 dark:text-blue-200">Organisation</span>
+            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Sage X3</span>
+			<span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Communication</span>
           </div>
           <div class="mt-5 flex justify-end items-center">
             <span class="inline-block px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-200 text-sm font-semibold transition-colors hover:bg-blue-200 dark:hover:bg-blue-800 cursor-pointer flex items-center gap-2">
@@ -1256,15 +1257,15 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
           </div>
           <span class="pill bg-pink-200 text-pink-900 dark:bg-pink-800 dark:text-pink-200 mb-2">2024-2025</span>
           <ul class="list-disc pl-5 text-gray-800 dark:text-gray-100 mb-2">
-            <li>Gestion et priorisation de projets en équipe</li>
-            <li>Stockage cloud, authentification sécurisée</li>
-            <li>Interface moderne, responsive & notifications</li>
-            <li>Application web de gestion couleur produits</li>
+            <li>Simplification du flux de validation </li>
+            <li>Création d'un nouveau fichier de gestion</li>
+            <li>Création de pochette maquette</li>
+            <li>Restructuration du flux existant</li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-2">
-            <span class="pill bg-pink-200 text-pink-900 dark:bg-pink-800 dark:text-pink-200">React</span>
-            <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Firebase</span>
-            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Agile</span>
+            <span class="pill bg-pink-200 text-pink-900 dark:bg-pink-800 dark:text-pink-200">Organisation</span>
+            <span class="pill bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-100">Excel</span>
+            <span class="pill bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-100">Communication</span>
           </div>
           <div class="mt-5 flex justify-end items-center">
             <span class="inline-block px-3 py-1 rounded-full bg-pink-100 dark:bg-pink-800 text-pink-600 dark:text-pink-200 text-sm font-semibold transition-colors hover:bg-pink-200 dark:hover:bg-pink-700 cursor-pointer flex items-center gap-2">
@@ -1290,7 +1291,6 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
             <li>Conception et dessin d’articles</li>
             <li>Développement du site e-commerce</li>
             <li>Gestion des flux administratifs et financiers</li>
-            <li>Création graphique et branding</li>
             <li>Gestion de la communauté et du marketing</li>
           </ul>
           <div class="flex flex-wrap gap-2 mt-2">
@@ -1342,10 +1342,16 @@ footer { color: #888; text-align: center; padding: 1.5rem 0 0.5rem 0; font-size:
 const projectDetails = {
   erp: `
     <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Intégration des gammes de contrôle sur l'ERP Sage X3</h1>
-    <img src="https://cdn.brightanalytics.eu/wp-content/uploads/Sage-X3-logo.png" alt="Sage X3" class="w-24 h-24 rounded-xl object-contain mb-4">
     <h2 class="text-xl font-bold mb-2 mt-4 text-accent">Contexte</h2>
-    <p>Automatisation de la gestion qualité : indicateurs en temps réel, suivi des non-conformités, adaptation du workflow dans Sage X3 chez Profalux.</p>
-    <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
+    <p> A l’heure actuelle les gammes de contrôle jouent un rôle crucial dans la gestion de la qualité des produits. Celles-ci permettent aux opérateurs de vérifier si leur production est conforme ou si au contraire il y’a des non conformités.
+
+</p>
+    
+	<h2 class="text-xl font-bold mb-2 mt-4">Problématique</h2>
+	<p>La problématique actuelle est que certaines gammes de contrôle sont encore au format papier ou excel alors que d’autres sont déjà dans l’ERP. Il y a donc une différence d’outils de gestion ce qui peut mener à des erreurs.
+</p>
+	
+	<h2 class="text-xl font-bold mb-2 mt-4">Etapes de réalisation</h2>
     <ul class="list-disc pl-5 mb-6">
       <li>Intégration technique sur ERP</li>
       <li>Automatisation des processus qualité</li>
@@ -1354,15 +1360,20 @@ const projectDetails = {
       <li>Reporting et documentation</li>
     </ul>
     <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
-    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Screenshot ERP" class="w-full rounded-xl mb-4">
-    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Indicateurs" class="w-full rounded-xl mb-4">
+	<img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Harmonisation" class="w-60 h-60 rounded-xl object-contain mb-4">
+	
+	
   `,
   harmonisation: `
     <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Harmonisation des teintes</h1>
-    <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Harmonisation" class="w-24 h-24 rounded-xl object-contain mb-4">
     <h2 class="text-xl font-bold mb-2 mt-4 text-pink-600">Contexte</h2>
-    <p>Application web pour la gestion et harmonisation des couleurs produits, priorisation des projets et notifications.</p>
-    <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
+	<p>Application web pour la gestion et harmonisation des couleurs produits, priorisation des projets et notifications.</p>
+	
+	<h2 class="text-xl font-bold mb-2 mt-4">Problématique</h2>
+	<p>La problématique actuelle est que le service achat n’est pas capable de vérifier si une ancienne ou nouvelle teinte à bien été validée.
+</p>
+	
+    <h2 class="text-xl font-bold mb-2 mt-4">Etapes de réalisation</h2>
     <ul class="list-disc pl-5 mb-6">
       <li>Gestion agile de projets en équipe</li>
       <li>Développement interface moderne et responsive</li>
@@ -1370,11 +1381,10 @@ const projectDetails = {
       <li>Stockage cloud</li>
     </ul>
     <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Projet harmonisation" class="w-full rounded-xl mb-4">
+    <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Harmonisation" class="w-60 h-60 rounded-xl object-contain mb-4">
   `,
   marque: `
     <h1 class="text-3xl font-bold mb-2 text-[#222] dark:text-[#f1f1f1]">Création de la marque Centric Concept</h1>
-    <img src="https://centriconcept.com/cdn/shop/files/4516456.png?v=1731014516&width=600" alt="Centric Concept" class="w-24 h-24 rounded-xl object-cover mb-4">
     <h2 class="text-xl font-bold mb-2 mt-4 text-pink-600">Contexte</h2>
     <p>Lancement de la marque Centric Concept : gestion fournisseurs, création graphique, développement e-commerce, branding et marketing.</p>
     <h2 class="text-xl font-bold mb-2 mt-4">Réalisation</h2>
@@ -1385,8 +1395,7 @@ const projectDetails = {
       <li>Marketing et animation communauté</li>
     </ul>
     <h2 class="text-xl font-bold mb-2 mt-4">Images</h2>
-    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Design Centric Concept" class="w-full rounded-xl mb-4">
-    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Mockup E-commerce" class="w-full rounded-xl mb-4">
+    <img src="https://images.seeklogo.com/logo-png/39/2/ral-umwelt-logo-png_seeklogo-393293.png" alt="Harmonisation" class="w-60 h-60 rounded-xl object-contain mb-4">
   `
 };
 
